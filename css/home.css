@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bubblegum Sans', sans-serif;
+    /* font-family: 'Chicle', serif;
+    font-family: 'Erica One', sans-serif;
+    font-family: 'Fredericka the Great', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Satisfy', cursive; */
+}
+
+:root {
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+
+body {
+    font-family: 'Finger Paint', cursive;
+    background: radial-gradient(#23ACF9, #3D7AD6);
+}
+
+.container {
+    background-image: url('Thumbnail.png');
+      
+    /* Specify background size and repeat properties */
+    background-size: cover; /* or "contain" for a different effect */
+    background-repeat: no-repeat;
+    
+    /* Center the background image */
+    background-position: center center;
+    
+    /* Optional: Add a fallback background color for better accessibility */
+    /* This color will be visible if the image fails to load */
+    /* fallback-background: #f0f0f0; */
+    height: 100vh;
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    max-height: 50vh;
+    width: 90vw;
+}
+
+/* Style for the button */
+.btn {
+    padding: 1.5rem;
+    background-color: #F2C14E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    /* color: white; */
+}
+
+.btn :hover{
+    color: white;
+    font-size: 1.4rem;
+    /* background-color: white; */
+}
+
+.no-dec{
+    text-decoration: none;
+    color: #333;
+    /* margin: 2rem; */
+}
+
+.my-img{
+    animation: rotateImg 2s linear infinite;
+}
+@keyframes rotateImg{
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(359deg);
+    }
+}

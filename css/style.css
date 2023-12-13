@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+
+body {
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+}
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+body{
+    background: radial-gradient(#23ACF9, #3D7AD6);
+}
+
+.container {
+    /* padding: 40px; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #37505C; */
+    /* background-color: radial-gradient(circle at center, red 0, blue, green 100%); */
+    /* background: radial-gradient(#23ACF9, #3D7AD6); */
+}
+
+.header{
+    max-width: 300px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.logo{
+    /* background-position: 0%; */
+    max-width: 300px;
+    width: 90vw;
+    max-height: 25vh;
+}
+
+#gameboard {
+    width: 100vw;
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* New thingy starts*/
+.box {
+    max-height: 100px;
+    max-width: 100px;
+    height: 30vw;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 7.5rem;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+}
+/* New thingy ends*/
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    font-size: 1rem;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.O{
+    color: white;
+}
+.X{
+    color: var(--orange);
+}
